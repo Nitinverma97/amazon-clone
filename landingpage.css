@@ -1,0 +1,351 @@
+/* 🌍 RESET + Global font */
+*{
+    margin: 0%;
+    border: border-box;     /* (NOTE: Correct is box-sizing, but you said no changes!) */
+    font-family: Arial;
+}
+
+/* 🟩 NAVBAR MAIN WRAPPER */
+.navbar{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Equal space between items */
+}
+
+/* 🟨 LOGO OUTER BOX */
+.nav-logo{
+    height: 50px;
+    width: 113px;
+    margin-bottom: 19px;
+}
+
+/* 🟨 ACTUAL LOGO IMAGE */
+.logo{
+   background-image: url(amazonlogo.webp);
+   background-size: cover;
+   height: 50px;
+   width: 113px;
+}
+
+/* 🧱 HOVER BORDER EFFECT (Amazon style) */
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+
+/* 📍 LOCATION TEXT AREA */
+.location{
+    color: white;
+}
+
+/* 📍 “Deliver to” small text */
+.deliver{
+    color:#cccccc;
+    font-size: 0.85rem;
+}
+
+/* 📍 Country bold text */
+.country{
+    font-size: 1rem;
+}
+
+/* 📍 Align India + pin icon */
+.country{
+    display: flex;
+    align-items: center;
+}
+
+/* 🔎 SEARCH BAR WRAPPER */
+.search-bar{
+    color: #0f1111;
+    background-color: #ffffff;
+    display: flex;
+    height: 35px;
+    border: none;
+}
+
+.search-bar :hover{
+    border: 2px solid orange;
+}
+/* 🔎 Category dropdown */
+.select{
+    font-size: 14px;
+}
+
+/* 🔎 Input field */
+.placeholder{
+    padding: 7px 10px 10px 10px;
+    height: 14.05px;
+    width: 350px;
+    font-size: 15px;
+}
+
+/* 🔎 Magnifier button */
+button{
+    height: 35px;
+    width: 45px;
+    background-color: orange;
+    font-size: 1.1rem;
+}
+
+/* 🇮🇳 LANGUAGE BLOCK */
+.india-flag{
+    display: flex;
+    margin-top: 16px;
+}
+
+/* 🇮🇳 Flag image */
+.flag{
+    background-image: url(flag.png);
+    background-size: cover;
+    height: 16.2px;
+    width: 21.6px;
+    font-size: 0.8rem;
+}
+
+/* EN text */
+.en{
+    color: #ffffff;
+}
+
+/* ▼ Dropdown arrow (all arrows use this) */
+.errow{
+   background: transparent;
+   border: none;
+   padding: 0;
+   margin: 0;
+   color: white;
+   font-size: 10px;
+   display: flex;
+   align-items: center;
+}
+
+/* Small text defaults */
+span{
+    font-size: 0.7rem;
+    color: #ffffff;
+}
+
+/* 👤 ACCOUNT & LIST BLOCK */
+.account-list {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: white;
+}
+
+/* Account text stacked vertically */
+.account-list .text{
+   display: flex;
+   flex-direction: column;
+   line-height: 1;
+}
+
+/* Account & list text — lower line */
+.account-list .account{
+   font-size: 0.75rem;
+   color: #ffffff;
+}
+
+/* Hello text — top line */
+.account-list .hello{
+   font-size: 0.85rem;
+   color: #ffffff;
+   font-weight: 700;
+}
+
+/* ▼ Arrow for Account block */
+.account-list .arrow{
+   font-size: 0.5rem;
+}
+
+/* 🔁 RETURNS & ORDERS BLOCK */
+.returns-orders{
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   color: white;
+}
+
+/* Text wrapping (two lines stacked) */
+.returns-orders .text{
+   display: flex;
+   flex-direction: column;
+   line-height: 1;
+}
+
+/* Top line: Returns */
+.returns-orders .returns{
+   font-size: 0.75rem;
+   color: #ffffff;
+}
+
+/* Bottom line: & Orders */
+.returns-orders .orders{
+   font-size: 0.85rem;
+   color: #ffffff;
+   font-weight: 700;
+}
+
+/* ▼ Arrow for Returns block */
+.returns-orders .arrow{
+   font-size: 0.5rem;
+}
+
+/* 🛒 CART TEXT EXTRA CLASS (unused duplicate) */
+.orders{
+    font-size: 0.8rem;
+    color: #ffffff;
+    font-weight: 750;
+}
+
+/* 🛒 CART ICON BUTTON */
+.cart{
+    height: 26px;
+    width: 38px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.8rem;
+}
+
+/* 🛒 CART SECTION WRAPPER */
+.cart-button{
+    display: flex;
+}
+
+/* 🛒 CART TEXT */
+.cart-text{
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 750;
+}
+
+/* second Nav */
+.second-nav{
+    height: 39px;
+    display: flex;
+    background-color: #0f1111;
+    color: #ffffff;
+}
+
+.second-nav-ops{  
+    margin-left: 30px;
+        display: flex;
+        gap: 18px;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+.end-text{
+     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;     /* 👈 MAGIC LINE */
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.bar-button button{
+    width: 40px;
+    height: 35px;
+    border: none;
+    background-color: #010305;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-section{
+    background-image: url(heroimage.jpg);
+    height: 350px;
+    width: 1280px;
+    background-size: cover;
+}
+
+/* <!-- main content --> */
+
+.main-content{
+    background-color: rgb(237, 208, 237);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 12px;
+
+}
+
+.box{
+    border-radius: 3px;
+    background-color: white;
+    height: 350px;
+    width: 23%;
+    justify-content: space-evenly;
+}
+
+.item-img{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box p{
+  margin-top: 5px;
+  color: blue;
+}
+
+/* footer */
+
+/* TOP STRIP */
+.footer-top {
+    height: 49px;
+    width: 100%;
+    background-color: #37475a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 550;
+    margin-top: 20px;
+}
+
+/* LINKS SECTION */
+.footer-links {
+    background-color: #232f3e;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    color: white;
+}
+
+/* UL styling */
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+    min-width: 180px; /* prevent overlap */
+}
+
+/* HEADINGS */
+.footer-links p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* LINKS */
+.footer-links a {
+    color: #dddddd;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
