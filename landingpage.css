@@ -259,12 +259,14 @@ span{
     cursor: pointer;
 }
 
-.hero-section{
+.hero-section {
+    width: 100%;
+    height: 350px;        /* height tum badha/samall kar sakte ho */
     background-image: url(heroimage.jpg);
-    height: 350px;
-    width: 1280px;
-    background-size: cover;
+    background-size: cover;       /* image ko box ke andar fit karega */
+    background-repeat: no-repeat; /* repeat nahi karega */
 }
+
 
 /* <!-- main content --> */
 
